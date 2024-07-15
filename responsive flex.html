@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1 responsive flex</title>
+    <style>
+        *{  margin: 0px;
+            padding: 5px;
+        }
+        
+
+        .box-container{
+            
+           
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            gap: 10px;
+            height: 100vh;
+            padding: 10px;
+            border: 3px solid;
+            border-radius: 20px;
+           
+             /* width: 100px auto; */
+            
+        }
+
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:lightgray;
+            border-radius: 16px;
+
+            font-size: 2em;
+
+            width: 30%;
+        }
+
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:lightgoldenrodyellow;
+            border-radius: 16px;
+
+            font-size: 2em;
+
+            width: 70%;
+       
+        
+            
+        }
+
+       @media screen and (max-width=576px) {
+        .box-container{
+            flex-direction: column;
+            height: 100vh;        }
+        .left{
+            height: 30vh;
+            
+
+        }
+        .right{
+            height: 70vh;
+        
+        }
+        
+       }
+           
+        
+            
+            
+        
+    </style>
+</head>
+<body>
+  <div class="box-container">
+   
+    <div class="left">left</div>
+    <div class="right">right</div>
+
+  </div>
+  
+</body>
+</html>
